@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+
+    <!-- เมนูรองนี้ แสดงเฉพาะหน้าจอขนาด 768px (md) ขึ้นไป โดยใช้ Tailwind CSS เพื่อจัดให้อยู่ด้านบนของหน้าจอ (fixed top-0 left-0 w-full), มีพื้นหลังสีขาว (bg-white shadow-md), และข้อความเรียงกันในแนวนอน (flex justify-center space-x-4).
+    แต่ละเมนู มีเอฟเฟกต์เปลี่ยนสีแดงเมื่อชี้ (hover:text-red-600 transition-colors). -->
+
+
+    <div class="hidden md:flex fixed top-0 left-0 w-full bg-white  py-2 
+                text-center mx-auto whitespace-nowrap space-x-4 
+                overflow-hidden">
+         
+     <!-- เมนูแต่ละรายการ ใช้ <span> เพื่อแสดงหมวดหมู่และหัวข้อข่าว พร้อมตัวคั่น |. ข้อความสามารถคลิกได้ (cursor-pointer), เปลี่ยนเป็นสีแดงเมื่อชี้ (hover:text-red-600), และมีเอฟเฟกต์เปลี่ยนสี (transition-colors duration-200). truncate ป้องกันข้อความยาวเกินไป. -->
+
+               
+        <span class="text-red-600 font-bold">PODCAST:</span> 
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">Tug of war</span> |
+
+        <span class="text-red-600 font-bold">UKRAINE-RUSSIA:</span> 
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">In photos</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">Help Ukraine</span> |
+
+        <span class="text-red-600 font-bold">TRENDING:</span> 
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">Hong Kong exodus</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">'Ecovado'</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">Andriy Shevchenko</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">Anne Heche</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">POPOPIOUIL:</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">LABULULUBAA</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">MOMOM</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">Momomomomomoo</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">Anne Heche</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">POPOPIOUIL:</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">LABULULUBAA</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">MOMOM</span> |
+
+        <span class="hover:text-red-600 transition-colors duration-200 cursor-pointer truncate">Momomomomomoo</span> |
+
+
+    </div>
+</body>
+</html>
